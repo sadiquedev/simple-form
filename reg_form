@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Register</title>
+
+</head>
+<body>
+
+  <h1>Register</h1>
+  <!-- name information -->
+  <form>
+    <label for="firstname">First Name: </label>
+    <input name="first" id="firstname" type="text" placeholder="John" required>
+    <label for="lastname">Last Name:</label>
+    <input name="last" id="lastname" type="text" placeholder="Smith" required>
+  <!-- gender information -->
+    <div>
+      <label for="male">Male</label>
+      <input name="gender" id="male" type="radio">
+      <label for="female">Female</label>
+      <input name="gender" id="female" type="radio">
+      <label for="other">Other </label>
+      <input name="gender" id="other" type="radio">
+    </div>
+
+  <!-- email and password -->
+
+    <div>
+      <label>
+        Email:
+          <input name="email" type="email" placeholder="your email" required>
+      </label>
+
+      <label>
+        Password:
+         <input name="password" type="password" pattern=".{5,10}" required title="Password must be between 5 and 10 characters">
+      </label>
+    </div>
+
+  <!-- birthday information -->
+
+  <div>
+    <label>
+      Birthday:
+      <select name="month">
+        <option>Month</option>
+        <option>Jan</option>
+        <option>Feb</option>
+        <option>March</option>
+      </select>
+
+      <select name="day">
+        <option>Day</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+      </select>
+
+      <select name="year">
+        <option>Year</option>
+        <option>1999</option>
+        <option>2000</option>
+        <option>2001</option>
+      </select>
+    </label>
+  </div>
+
+  <!-- terms and conditions agreement -->
+
+  <div>
+    <label for="check">I agree to the terms and conditions</label>
+    <input id="check" type="checkbox">
+  </div>
+  <div>
+    <button>Submit</button>
+  </div>
+  </form>
+
+</body>
+</html>
